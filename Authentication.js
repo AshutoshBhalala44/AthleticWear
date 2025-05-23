@@ -1,4 +1,4 @@
-class Authentication extends RegisterUser{
+class Authentication {
     constructor(userInstance) {
       console.log("constructor")
     }
@@ -17,4 +17,4 @@ class Authentication extends RegisterUser{
     }
   }
 
- // export default RegisterUser;
+  export default RegisterUser;

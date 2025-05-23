@@ -1,5 +1,5 @@
 // Cart class related to RegisterUser
-class Cart extends RegisterUser{
+class Cart {
   #cartID;
   #userID;
   #items;
@@ -22,4 +22,4 @@ class Cart extends RegisterUser{
   }
 }
 
-//export default RegisterUser;
+export default RegisterUser;
