@@ -17,4 +17,4 @@ class Authentication {
     }
   }
 
-  export default RegisterUser;
+export default Authentication;
