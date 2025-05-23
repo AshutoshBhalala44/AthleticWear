@@ -1,40 +1,19 @@
-import Product from 'product.js';
-
 class Inventory {
-  constructor() {
-    this.products = new Map(); // key: productID, value: Product instance
-  }
+    #productId;
+    #quantity;
 
-  addProduct(product) {
-    if (product instanceof Product) {
-      this.products.set(product.productID, product);
-    } else {
-      throw new Error("Invalid product type.");
+    constructor(productId,quantity) {
+        this.productId = productId;
+        this.quantity = quantity;
     }
-  }
 
-  removeProduct(productID) {
-    this.products.delete(productID);
-  }
-
-  getProduct(productID) {
-    return this.products.get(productID);
-  }
-
-  listProductsByCategory(category) {
-    const results = [];
-    for (let product of this.products.values()) {
-      if (product.category === category) {
-        results.push(product);
-      }
+    checkStock(productId) {
+        //Checks the amount of the product based on the productId.
     }
-    return results;
-  }
 
-  checkAvailability(productID) {
-    const product = this.products.get(productID);
-    return product ? product.isInStock() : false;
-  }
+    updateStock(productId, quantity){
+        //Updates the quantity of a specified product.
+    }
 }
 
 export default Inventory;
