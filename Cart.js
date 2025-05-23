@@ -1,5 +1,8 @@
 // Cart class related to RegisterUser
-class Cart {
+class Cart extends RegisterUser{
+  #cartID;
+  #userID;
+  #items;
   constructor(cartID, user) {
     this.cartID = cartID;
     this.userID = user.userId;
@@ -7,23 +10,16 @@ class Cart {
   }
 
   addItem(product) {
-    this.items.push(product);
-    console.log(`Added ${product.name} to cart.`);
+    console.log("adding item")
   }
 
   removeItem(product) {
-    const index = this.items.findIndex(
-      (p) => p.name === product.name && p.price === product.price
-    );
-    if (index > -1) {
-      this.items.splice(index, 1);
-      console.log(`Removed ${product.name} from cart.`);
-    } else {
-      console.log(`${product.name} not found in cart.`);
-    }
+    console.log("removing item")
   }
 
   getTotal() {
-    return this.items.reduce((total, p) => total + p.price * p.quantity, 0);
+    console.log("getting total")
   }
 }
+
+//export default RegisterUser;

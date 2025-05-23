@@ -1,32 +1,20 @@
-class Authentication {
+class Authentication extends RegisterUser{
     constructor(userInstance) {
-    //   this.user = userInstance; // expects a RegisterUser instance
-    //   this.loggedIn = false;
+      console.log("constructor")
     }
   
     login(email, password) {
-    //   if (this.validateCredentials(email, password)) {
-    //     console.log("Login successful.");
-    //     this.loggedIn = true;
-    //     return true;
-    //   } else {
-    //     console.log("Login failed. Invalid credentials.");
-    //     return false;
-    //   }
+      console.log("logining into application");
     }
   
     logout() {
-        // logout
-
-    //   if (this.loggedIn) {
-    //     console.log("User logged out.");
-    //     this.loggedIn = false;
-    //   } else {
-    //     console.log("No user is currently logged in.");
-    //   }
+        
+         console.log("No user is currently logged in.");
     }
   
     validateCredentials(email, password) {
-      // return this.user.email === email && this.user.password === password;
+      console.log("validating credentials")
     }
   }
+
+ // export default RegisterUser;

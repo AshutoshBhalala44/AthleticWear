@@ -1,4 +1,8 @@
 class RegisterUser{
+    #userId;
+    #name;
+    #email;
+    #password;
     constructor(userId, name, email, password){
         // initialization of class
         this.userId = userId;
