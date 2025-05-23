@@ -13,11 +13,11 @@ class Product {
       this.stock = stock;
     }
   
-    getDetails() {
+    getDetails(productID, name, price, description) {
       // Returns product details
     }
   
-    isAvailable() {
+    isAvailable(productId, stock) {
       // Check if product is available in stock
     }
   }
