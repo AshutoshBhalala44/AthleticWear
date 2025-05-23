@@ -22,3 +22,5 @@ class RegisterUser{
         return true;
     }
 }
+
+export default RegisterUser;

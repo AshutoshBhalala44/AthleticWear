@@ -22,4 +22,4 @@ class Cart {
   }
 }
 
-export default RegisterUser;
+export default Cart;
