@@ -12,14 +12,16 @@ class RegisterUser{
          
     }
 
-    login(){
-        console.log("logging in as register user");
-        return true;
+    login(email, password){
+        //logging in as register user.
     }
 
-    viewOrders(){
-        console.log("getting order for register user");
-        return true;
+    register(name, email, password){
+        //registering a user.
+    }
+
+    viewOrders(userId){
+        //getting order for register user.
     }
 }
 

@@ -9,11 +9,11 @@ class Payment {
         this.status = status;
     }
 
-    process() {
+    process(paymentId, amount) {
         //Payment processing
     }
 
-    refund() {
+    refund(paymentId, status) {
         //refund processing
     }
     }

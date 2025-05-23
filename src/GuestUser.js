@@ -5,15 +5,11 @@ class GuestUser {
         this.sessionId = sessionId;
     }
 
-    register() {
-        //Register a new user
-    }
-
     browseProducts() {
         //Browse available products
     }
 
-    checkout() {
+    checkout(sessionId) {
         //Checkout process
     }
 }

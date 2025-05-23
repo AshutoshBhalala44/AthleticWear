@@ -11,15 +11,15 @@ class Order {
         this.status = status;
     }
 
-    checkout() {
+    checkout(orderId, userId, itemsOrdered) {
         //manages order checkout
     }
 
-    cancel() {
+    cancel(status) {
         //cancels order
     }
 
-    confirmPayment() {
+    confirmPayment(orderId, userId) {
         //Payment confirmation
     }
 }

@@ -10,15 +10,15 @@ class Cart {
   }
 
   addItem(product) {
-    console.log("adding item")
+    //adding item.
   }
 
   removeItem(product) {
-    console.log("removing item")
+    //removing item.
   }
 
-  getTotal() {
-    console.log("getting total")
+  getTotal (items) {
+    //getting total
   }
 }
 
